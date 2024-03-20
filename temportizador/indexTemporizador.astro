@@ -1,0 +1,117 @@
+---
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temporizador</title>
+  <astro>
+  <style>
+  body {
+  font-family: serif;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+  margin: 0; 
+}
+
+.container {
+  font-size: 2em; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+h1 {
+  text-align: center
+  margin-bottom: 10px;$ git config --list --show-origin
+
+}
+
+.temporizador {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+
+.tiempo {
+  font-family: sans-serif;
+  display: flex;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+#minutos,
+#segundos {
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#iniciar {
+  background-image: url('playImg.jpg');
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid green;
+}
+
+#detener {
+  background-image: url('stopImg.jpg');
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid red;
+}
+
+#reiniciar {
+  background-image: url('restartImg.jpg');
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid blue;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>TEMPORIZADOR</h1>
+
+    <div class="temporizador">
+      <div class="tiempo">
+        <span id="minutos">5</span>:<span id="segundos">00</span>
+      </div>
+      <div class="botones">
+      <button id="iniciar"></button>
+      <button id="detener"></button>
+      <button id="reiniciar"></button>
+    </div>
+    </div>
+  </div>
+
+  <script src="./func.js"></script>
+</body>
+</html>

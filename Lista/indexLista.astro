@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de tareas</title>
+  <style>
+    body {
+  font-family: sans-serif;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.tasks {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  margin-bottom: 10px;
+}
+
+.task input {
+  margin-right: 10px;
+}
+
+#add-task {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h1>Lista de tareas</h1>
+
+    <ul class="tasks">
+      <li class="task">
+        <input type="checkbox" id="task1">
+        <label for="task1">Ir de compras</label>
+      </li>
+      <li class="task">
+        <input type="checkbox" id="task2">
+        <label for="task2">Refactorizar el backend</label>
+      </li>
+      <li class="task">
+        <input type="checkbox" id="task3">
+        <label for="task3">Agregar una nueva función a la aplicación</label>
+      </li>
+    </ul>
+
+    <button id="add-task">Agregar tarea</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
